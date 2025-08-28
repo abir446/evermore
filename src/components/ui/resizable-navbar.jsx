@@ -7,6 +7,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 export const Navbar = ({ children, className }) => {
@@ -71,7 +72,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2",
+        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-pink-100 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2",
         className
       )}
     >
@@ -79,7 +80,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-600"
+          className="relative px-4 py-2 text-fuchsia-500"
           key={`link-${idx}`}
           href={item.link}
         >
@@ -163,12 +164,12 @@ export const MobileNavToggle = ({ isOpen, onClick }) => {
 
 export const NavbarLogo = () => {
   return (
-    <a
-      href="#"
+    <Link
+      href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <span className="font-bold text-pink-500 text-3xl">Evermore</span>
-    </a>
+    </Link>
   );
 };
 
@@ -181,7 +182,7 @@ export const NavbarButton = ({
   ...props
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-4 py-2 rounded-md  button bg-pink-100 text-pink-700 text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
   const variantStyles = {
     primary:
@@ -221,7 +222,7 @@ export const EvermoreNavbar = () => {
         <div className="flex w-full items-center justify-between">
           <NavbarLogo />
           <NavItems items={navItems} onItemClick={handleItemClick} />
-          <NavbarButton href="#">Book Event</NavbarButton>
+          <NavbarButton href={'/create-new'}>Book Event</NavbarButton>
         </div>
       </NavBody>
       <MobileNav>
@@ -232,7 +233,7 @@ export const EvermoreNavbar = () => {
         <MobileNavMenu isOpen={isOpen} onClose={toggleMenu}>
           {navItems.map((item, idx) => (
             <a
-              className="text-black transition-colors hover:text-gray-600"
+              className="text-white transition-colors hover:text-gray-600"
               key={idx}
               href={item.link}
               onClick={handleItemClick}
@@ -240,7 +241,7 @@ export const EvermoreNavbar = () => {
               {item.name}
             </a>
           ))}
-          <NavbarButton href="#">Book Event</NavbarButton>
+          <NavbarButton href="/create-new">Book Event</NavbarButton>
         </MobileNavMenu>
       </MobileNav>
     </Navbar>

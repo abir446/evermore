@@ -35,6 +35,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import Button from "./selfmades/Button";
+import Link from "next/link";
 
 export function GridBackgroundDemo() {
   return (
@@ -53,8 +54,9 @@ export function GridBackgroundDemo() {
         <div className="z-10 flex flex-col items-start justify-center bg-red-10 px-2 py-4">
             <h1 className="text-6xl sm:text-8xl font-bold text-pink-500">Evermore</h1>
         <p className="text-center text-sm">Let others share there moments</p>
+        <Link href={'/create-new'}>
         <Button text="Book Wedding Date" className="bg-pink-400 hover:bg-pink-500 transition-colors duration-500 text-white px-4 py-2" />
-
+</Link>
         </div>
     </div>
   );
