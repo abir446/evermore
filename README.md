@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Evermore
 
-## Getting Started
+Evermore is a modern, seamless photo-sharing platform designed for Indian weddings. Our mission is to capture every fleeting moment from every guest's perspective, ensuring that no memory is lost. By simply scanning a QR code, guests can instantly upload all their candid photos and videos to a central, private album, creating a comprehensive digital keepsake for the couple.
 
-First, run the development server:
+### Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **QR Code Instant Access:** Guests can effortlessly scan a unique QR code to access the private album without needing to download an app or create an account.
+    
+*   **Mass Uploads:** The platform supports bulk uploads, allowing multiple photos and videos to be added at once, making it incredibly convenient for guests to share their "photo dumps."
+    
+*   **Centralized Album:** All photos and videos are stored in a single, organized album, providing the couple with a complete collection of memories from their special day.
+    
+*   **Real-time Sharing:** Guests can see a live feed of moments being shared, enhancing the communal and celebratory atmosphere of the event.
+    
+*   **Privacy and Security:** Each wedding album is private and password-protected, ensuring that only invited guests and the couple have access to the cherished memories.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Why use our product?
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   **No need for expensive photographers:** Photographers may charge around 50-60k per wedding, we offer photograph at avery minimmal rate.
+*   **No waiting time for getting photos:** Photographers take months to publish the photography work, with our product you have real time access to photos taken by guests without killing the interest.
