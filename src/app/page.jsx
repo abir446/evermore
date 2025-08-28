@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <div>
+      <div className="mb-50">
         Hello after Hero
       </div>
     </div>

@@ -1,16 +1,14 @@
 'use client'
 import { SignInButton, UserButton, useUser  } from '@clerk/nextjs'
+import { MenuItem } from './ui/navbar-menu';
 
-export const Navbar = () => {
+
+export const Navigation = () => {
     const {isSignedIn,user,} = useUser()
     const isAdmin = isSignedIn && user?.publicMetadata?.role == 'admin';
     // console.log(user)
   return (
-    <div>
-        {!isSignedIn && <SignInButton />}
+    <MenuItem />
         
-         {isSignedIn && <div>{user.firstName} {isAdmin && <span> (Admin)</span>} <UserButton /></div>}   
-        
-    </div>
   )
 }
