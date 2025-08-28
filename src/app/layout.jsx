@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <body
           className={`${lustria.variable} antialiased`}
         >
-          <EvermoreNavbar />
+          {/* <EvermoreNavbar /> */}
           {children}
         </body>
       </html>
